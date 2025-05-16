@@ -1,0 +1,66 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Создать заявку</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">Мой Ремонт</div>
+        <nav class="nav">
+            <a href="create.html">Подать заявку</a>
+            <div class="profile">
+                <button class="profile-btn">Профиль </button>
+                <div id="profile-dropdown" class="dropdown-content">
+                    <a href="cards.html">Личный кабинет</a>
+                    <a href="#" class="logout-btn">Выйти</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="form-container">
+            <h1>Подать заявку</h1>
+            <form id="create-form">
+                <div class="form-group">
+                    <label for="card-num">Адрес объекта ремонта</label>
+                    <input type="text" id="card-num" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="card-title">Тип услуги</label>
+                    <select id="card-title">
+                        <option>косметический ремонт</option>
+                        <option>капитальный ремонт</option>
+                        <option>электромонтаж</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="card-description">Дата и время начала работ</label>
+                    <input type="text" id="card-description" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="card-pay">Тип оплаты </label>
+                    <select id="card-pay" >
+                        <option>наличными</option>
+                        <option>банковская карта</option>
+                        <option>безналичный расчет</option>
+
+                    </select>
+                </div>
+                
+                <button type="submit">Создать</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
